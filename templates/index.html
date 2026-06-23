@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClinkGO - Soporte con Archivos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo-container">
+            <i class="fa-solid fa-bars"></i>
+            <h1>ClinkGO</h1>
+        </div>
+        <ul class="menu-items">
+            <li class="active"><i class="fa-solid fa-users"></i> Soporte Clientes</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <h2>Panel de Control - Soporte Técnico</h2>
+        </header>
+
+        <div class="support-area">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar clientes o notas...">
+                <button class="btn-action" id="btnAddTab" style="background-color: #28a745;"><i class="fa-solid fa-plus"></i> Agregar Cliente</button>
+                
+                <input type="file" id="fileUploadInput" style="display:none;" multiple>
+                <button class="btn-action" id="btnAttachFile" style="background-color: #6c757d;"><i class="fa-solid fa-paperclip"></i> Subir Archivo</button>
+            </div>
+
+            <div class="tabs-header" id="tabsHeader"></div>
+            <div class="tab-content-area" id="tabContentArea"></div>
+        </div>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
